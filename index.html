@@ -1,0 +1,191 @@
+<!--Muskaan Vahora 
+124818204-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskaan - Web Developer</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <img src="./assets/images/img2.jpg" 
+            alt="Muskaan Vahora" class="profile">
+            <h1 class="text-uppercase font-weight-bold">Muskaan Vahora</h1>
+            <h5>Web Developer, Software Engineer</h5>
+            <div class="actions flex-center">
+                <a href="./assets/Resume.docx" class="btn btn-primary mr-1">
+                    <ion-icon name="cloud-download" class="mr-50"></ion-icon>
+                    <span>Resume</span>
+                </a>
+                <a href="#contact-me" class="btn">
+                    <ion-icon name="call" class="mr-50"></ion-icon>
+                    <span>Contact me</span>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sweetsecret2821/" class="social" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://github.com/muskaan2821/muskaan2821.github.io" class="social"target="_blank">
+                    <ion-icon name="logo-github"  ></ion-icon>
+                </a>
+                <a href="http://linkedin.com/in/muskaan-vahora-491226191" class="social" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+               
+            </div>
+        </div>
+    </section>
+    <section class="about section-gap text-center alternate-bg">
+        <div class="container">
+            <div class="header">
+                <h2>About Me </h2>
+            </div>
+            <p>fghyhthy</p>
+        
+            <div class="about-details">
+                <div class ="detail">
+                    <h3 class ="small">12 August 2021</h3>
+                    <p>Date</p> 
+                </div>
+                <div class ="detail">
+                    <h3 class ="small">20</h3>
+                    <p>Age</p> 
+                </div>
+                <div class="detail">
+                    <h3 class="small">vahoramuskaan@gmail.com</h3>
+                    <p>Email</p>
+                </div>
+                <div class="detail">
+                    <h3 class="small">English,Hindi</h3>
+                    <p>Language</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education section-gap text-center">
+        <div class="container">
+            <div class="header">
+                <h2>Education</h2>
+                <p>Completed primary and secondary education in India. Thereafter, 3 years diploma at Parul University Gujarat, India. Currently pursuing two years Diploma in Computer Programming at Seneca College Ontario Canada  </p>
+            </div>
+            <div class="education-details">
+                <div class="education-card">
+                    <h4>Secondory Education</h4>
+                    <h3>Gujarat Refinary English Medium School</h3>
+                    <p>Completed Secondory Education under Gujarat Board at Gujarat in India under the supervision of Principal Mrs. Rita Gondaliya in march 2017 with overall score of 79%</p>
+                </div>
+                <div class="education-card">
+                    <h4>Diploma in Computer Engineering </h4>
+                    <h3>Parul University</h3>
+                    <p>With high score of 79% in Secondary education I got a scholarship at Parul University wherein, I did Diploma program of 3 years under the supervision of Principal Mr.Jatin Vaidya during the year August 2017 - August 2020. I completed my Diploma program with 9.92 CGPA </p>
+                </div>
+                <div class="education-card">
+                    <h4>Diploma in Computer Programming</h4>
+                    <h3>Seneca College</h3>
+                    <p>Recently pursuing Diploma program from Seneca College and expected to complete the program in April 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me section-gap text-center alternate-bg" id="contact-me">
+        <div class="container">
+            <div class="header">
+                <h2>Contact Me</h2>
+                
+            </div>
+            <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                <div class="row">
+                    <div class="col-6 ">
+                        <div class="form-group">
+                            <label for="">Enter Name</label>
+                            <input type="text" name="name" placeholder="Enter your Name" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="">Email Address</label>
+                            <input type="email" name="email" placeholder="name@example.com" class="form-control" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="form-group">
+                            <label for="">Enter Address</label>
+                            <textarea name="address" rows="6" class="form-control" placeholder="Address" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-group">
+                            <label for="">City</label>
+                            <input name="city" type="text" placeholder="Ex. Toronto" class="form-control" list="cities" required/>
+                            <datalist id="cities">
+                                <option value="Toronto">
+                                <option value="Montreal">
+                                <option value="Vancouver">
+                                <option value="Ottawa">
+                                <option value="Calgary">
+                              </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Postal Code</label>
+                            <input name="postalcode" type="text" placeholder="M1A 999" class="form-control" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mb-1">
+                            <label for="" class="mr-2 mb-75 font-size-sm">Type of message ?</label>
+                            <div class="form-radio-group">
+                                <div class="mr-2">
+                                    <input type="radio" name="type" id="type-1" value="question" checked required>
+                                    <label for="type-1">Question</label>
+                                </div>
+                                <div class="mr-2">
+                                    <input type="radio" name="type" id="type-2" value="comment" required>
+                                    <label for="type-2">Comment</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="type" id="type-3" value="hiring" required>
+                                    <label for="type-3">Hiring</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6" style="display: none;" id="rate-container">
+                        <div class="form-group">
+                            <label for="">Hourly Rate</label>
+                            <input name="rate" type="number" placeholder="99" class="form-control" min="0" id="rate-input"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="">Enter Message</label>
+                            <textarea name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-1">
+                    <button type="submit" class="btn btn-sm btn-primary btn-curve m-auto font-weight-semi-bold">
+                        <ion-icon name="paper-plane" class="mr-50"></ion-icon>
+                        <span>Send Message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
